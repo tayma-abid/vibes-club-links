@@ -1,0 +1,374 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #11194f,
+            #263f91,
+            #54217d,
+            #19164c
+        );
+
+    color: white;
+
+    padding: 30px 15px;
+
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+/* =====================================
+   HEADER IMAGE
+===================================== */
+
+.header-image {
+
+    width: 100%;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.35);
+
+}
+
+
+.header-image img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+/* =====================================
+   CLUB INFORMATION
+===================================== */
+
+.club-info {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.club-info h1 {
+
+    font-size: 38px;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+
+    letter-spacing: -1px;
+
+}
+
+
+.club-info p {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 3px 0;
+
+}
+
+
+/* =====================================
+   SOCIAL MEDIA
+===================================== */
+
+.social-media {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+/* =====================================
+   SOCIAL CARD
+===================================== */
+
+.social-card {
+
+    width: 100%;
+
+    min-height: 76px;
+
+    padding: 10px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: #111;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.94
+    );
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* HOVER */
+
+.social-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    background: white;
+
+    box-shadow:
+        0 14px 35px
+        rgba(0, 0, 0, 0.28);
+
+}
+
+
+/* =====================================
+   SOCIAL MEDIA IMAGE
+===================================== */
+
+.social-card img {
+
+    width: 48px;
+
+    height: 48px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =====================================
+   SOCIAL TEXT
+===================================== */
+
+.social-text {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.social-text strong {
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+.social-text span {
+
+    font-size: 13px;
+
+    color: #777;
+
+}
+
+
+/* =====================================
+   ARROW
+===================================== */
+
+.arrow {
+
+    font-size: 32px;
+
+    color: #777;
+
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.social-card:hover .arrow {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding-bottom: 15px;
+
+    opacity: 0.85;
+
+}
+
+
+footer p {
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+
+}
+
+
+footer small {
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 500px) {
+
+
+    body {
+
+        padding:
+            20px 12px;
+
+    }
+
+
+    .header-image {
+
+        border-radius: 20px;
+
+    }
+
+
+    .club-info h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .club-info p {
+
+        font-size: 14px;
+
+    }
+
+
+    .social-card {
+
+        min-height: 70px;
+
+        padding:
+            9px 15px;
+
+    }
+
+
+    .social-card img {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+}
